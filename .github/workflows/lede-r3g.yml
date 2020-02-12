@@ -7,7 +7,7 @@
 # <https://github.com/KFERMercer/OpenWrt-CI>
 #
 
-name: lede-r3g
+name: lede-r3g-精简
 
 on:
   push:
@@ -105,7 +105,7 @@ jobs:
           cat >> .config <<EOF
           CONFIG_TARGET_ramips=y
           CONFIG_TARGET_ramips_mt7621=y
-          CONFIG_TARGET_ramips_mt7621_DEVICE_xiaomi_mir3g-v2=y
+          CONFIG_TARGET_ramips_mt7621_DEVICE_xiaomi_mir3g=y
           EOF
 
           # 固件压缩:
